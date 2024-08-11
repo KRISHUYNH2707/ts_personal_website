@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyet Sang's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+    <div class="fixed top-0 right-0 -z-10 translate-y-[-80%]">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+    <nav class="w-full fixed px-10 xl:px-[8%] justify-between items-center py-1: md:py-4 flex">
+        <img src="./images/white_logo_transparent.png" alt="" class="w-20 md:w-28 cursor-pointer mr-1">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-13">
+            <li><a href="">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">My Work</a></li>
+            <li><a href="">Contact Me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button><img src="./images/moon_icon.png" alt="" class="w-6"></button>
+            <button class="flex md:hidden w-6 ml-3" onclick="openSideMenu()"><img src="./images/menu-black.png" alt=""></button>
+            <a href="" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full">Contact 
+            <img class='w-3' src="./images/arrow-icon.png" alt=""></a>
+        </div>
+
+        <!-- ----- Mobile Menu ----- -->
+        <div id="sideMenu" class="block md:hidden fixed top-0 -right-full w-full h-full z-50 bg-rose-100 transition duration-500">
+            <div class="flex justify-end py-8 px-8">
+                <button class="w-6 cursor-pointer" onclick="closeSideMenu()"><img src="./images/close-black.png" alt=""></button>
+            </div>
+            <ul class="flex flex-col items-center gap-8">
+                <li><a href="#" onclick="closeSideMenu()">Home</a></li>
+                <li><a href="#" onclick="closeSideMenu()">About me</a></li>
+                <li><a href="#" onclick="closeSideMenu()">Services</a></li>
+                <li><a href="#" onclick="closeSideMenu()">My Work</a></li>
+                <li><a href="#" onclick="closeSideMenu()">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- -----header----- -->
+    <header class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./images/profile-img.png" alt="" class="w-32 md:w-44 lg:w-56">
+
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl">Hello, I'm Tuyet Sang <img src="./images/hand-icon.png" class='w-6' alt=""></h3>
+        <h1 class="text-3xl sm:text-6xl mt-1">junior public relations officer based in Ho Chi Minh city</h1>
+        <p class="max-w-3xl mx-auto">I have a passion for public relations and I am always looking for new opportunities to learn and grow.</p>
+        <div class="flex flex-col sm:flex-row gap-5 text-center mt-5">
+            <a href="#contact" class="px-10 py-3 border rounded-full 
+            bg-gradient-to-r from-[#b820e6] to-[#da7d20]
+                text-white flex gap-3">
+                contact me<img src="./images/right-arrow-white.png" class='w-6' alt=""></a>
+            <a href="#resume" class="border border-gray-500 rounded-full px-10 py-3 flex gap-3 bg-white">my resume <img src="./images/download-icon.png" class='w-6' alt=""></a>
+        </div>
+
+
+    </header>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
